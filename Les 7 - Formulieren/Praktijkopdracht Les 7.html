@@ -43,7 +43,7 @@
 <legend>Inschrijvingsinformatie</legend>
 
 <b> Selecteer uw hoogst genoten opleiding</b><br>
-<select name="opleiding">
+<select name="opleiding" multiple>
 <option value="geen">Geen</option>
 <option value="Middelbaar onderwijs" selected>Middelbaar onderwijs</option>
 <option value="hbo">Hoger beroepsonderwijs</option>
@@ -66,6 +66,9 @@
 <br>
 <label for="startdatum">Startdatum Cursus:</label>
 <input type="date" name = "startdatum" max="2025-12-31">
+<br>
+<p> Mocht u foto's willen toevoegen kunt u dat hier doen:</p>
+<input type="file" name="foto" multiple>
 
 </fieldset>
 <br>
