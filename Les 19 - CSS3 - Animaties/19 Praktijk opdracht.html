@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mijn pagina</title>
+<style>
+div {
+width: 250px;
+height: 250px;
+animation-name: beweging;
+animation-duration: 5s;
+animation-fill-mode: forwards;
+}
+#blauw{
+background-color: blue;
+}
+#rood{
+background-color: red;
+}
+@keyframes beweging {
+0% {margin-left: 0px;}
+25% {margin-left: 100px;}
+75% {margin-left: 200px;}
+100% {margin-left: 300px; background-color: yellow;}
+}
+</style>
+</head>
+<body>
+<div id="blauw">
+</div>
+<div id="rood">
+</div>
+</body>
+</html>
