@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les 25 huiswerk</title>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js">
+    </script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js">
+    </script>
+    <link rel="stylesheet"
+    href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <script type="text/javascript">
+    $(function() {
+    $("#accordion").accordion();
+    });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+        $("#knop").click(function() {
+        var voornaam = $("#idTekstveld1").val();
+        var achternaam = $("#idTekstveld2").val()
+        var straat = $("#idTekstveld3").val();
+        var huisnummer = $("#idTekstveld4").val();
+        var postcode = $("#idTekstveld5").val();
+        var plaatsnaam = $("#idTekstveld6").val();
+        var mailadres = $("#idTekstveld7").val();
+        
+        window.alert(
+        "Mijn naam is " + voornaam + " " + achternaam + " ik woon op " + straat + " " + huisnummer + " te " + plaatsnaam
+        );
+        });
+        });
+        </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+        $("#geheim").click(function() {
+        $("form").hide();
+        });
+        $("#toon").click(function() {
+        $("form").show();
+        });
+        });
+        </script>    
+</head>
+<body>
+    <div id="accordion">
+        <h3>Voor en achternaam</h3>
+        <div>
+            <form>
+                Wat is uw voornaam?
+                <input type="text" id="idTekstveld1"><br><br>
+                Wat is uw achternaam?
+                <input type="text" id="idTekstveld2"><br><br>
+             </form>   
+        </div>
+        
+        <h3>Straat en huisnummer</h3>
+        <div>
+            <form>
+                Vul uw straatnaam in.
+                <input type="text" id="idTekstveld3"><br><br>
+                Wat is uw huisnummer?
+                <input type="text" id="idTekstveld4"><br><br>
+             </form>  
+        </div>
+
+        <h3>Postcode en plaatsnaam</h3>
+        <div>
+       
+            <form>
+                Vul uw postcode in.
+                <input type="text" id="idTekstveld5"><br><br>
+                Wat is uw woonplaats?
+                <input type="text" id="idTekstveld6"><br><br>
+            </form>  
+        </div>
+
+        <h3>mail adres (niet verplicht)</h3>
+        <div>
+            <button id="geheim">Verberg dit is vertrouwelijk</button>
+            <button id="toon">Toon</button> <br><br>
+            <form>
+                Vul uw mailadres in.
+                <input type="text" id="idTekstveld7"><br><br>
+                 
+            </form>    
+        </div>
+        
+        <h3>Verzenden</h3>
+        <div>
+        <form>
+            <p>Alles goed ingevuld? </p>
+            <input id="knop" name="knop" type="button"
+            value="Klik op deze knop">
+        </form>
+        </div>
+    </div>    
+       
+        <noscript>
+        Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
+        </noscript> 
+</body>
+</html>
+
